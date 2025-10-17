@@ -36,6 +36,12 @@ Each phase of the project is documented in its own markdown guide. Together, the
 
 ---
 
+## 📊 Rough Diagram of Network Topology 
+
+<img width="434" height="226" alt="Lab_Setup" src="https://github.com/user-attachments/assets/e2ccd147-27fd-466d-9a8f-2c94111349c5" />
+
+---
+
 ## 🤝 Connect
 
 - **GitHub:** [github.com/cyristal-gems](https://github.com/cyristal-gems)  
