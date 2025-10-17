@@ -1,6 +1,5 @@
 # Lab Setup & Configuration
 
-## Lab Overview
 For this cybersecurity lab, I created a small virtual network to simulate a realistic environment for learning both offensive and defensive security techniques. The goal was to build a system where I could act as an attacker, defend a network, and explore how different tools like firewalls and intrusion detection systems (IDS) work. I used VirtualBox as the virtualization platform to run all the machines in the lab. VirtualBox allowed me to create and manage multiple virtual machines (VMs) on my personal computer. It’s a free and beginner-friendly platform that works on different operating systems. Each VM runs inside VirtualBox like its own separate computer, which made it possible for me to safely practice hacking without affecting my real machine or network.
 
 ## Virtual Machines and Roles
@@ -39,15 +38,15 @@ For this cybersecurity lab, I created a small virtual network to simulate a real
 pfSense (Firewall and IDS/IPS)  
 • Purpose: Acts as the firewall to control traffic between networks and runs Snort as an IDS/IPS to detect potential attacks.  
 • Network Adapters:  
-  o WAN (Adapter 1): NAT (external connection for updates)  
-  o LAN (Adapter 2): Internal Network: attacker_net (192.168.11.x)  
-  o LAN (Adapter 3): Internal Network: server_net (192.168.12.x)  
-  o LAN (Adapter 4): Internal Network: management_net (192.168.13.x)  
+  WAN (Adapter 1): NAT (external connection for updates)  
+  LAN (Adapter 2): Internal Network: attacker_net (192.168.11.x)  
+  LAN (Adapter 3): Internal Network: server_net (192.168.12.x)  
+  LAN (Adapter 4): Internal Network: management_net (192.168.13.x)  
 • IP Addresses:  
-  o WAN (em0): DHCP (assigned by VirtualBox NAT)  
-  o LAN (em1): 192.168.11.1  
-  o LAN (em2): 192.168.12.1  
-  o LAN (em3): 192.168.13.1
+  WAN (em0): DHCP (assigned by VirtualBox NAT)  
+  LAN (em1): 192.168.11.1  
+  LAN (em2): 192.168.12.1  
+  LAN (em3): 192.168.13.1
 
 ```
 +-----------+-----------------+-----------------+--------------------------+
@@ -64,9 +63,10 @@ pfSense (Firewall and IDS/IPS)
 Kali Linux (Attacker Machine)  
 • Purpose: My main offensive machine used for penetration testing. Kali is a well-known Linux distribution that comes with tools like Metasploit, Nmap, and Netcat.  
 • Network Adapters:  
-  o Adapter 1: Internal Network: attacker_net (192.168.11.x)  
+  Adapter 1: Internal Network: attacker_net (192.168.11.x)  
   o Adapter 2: Internal Network: server_net (192.168.12.x)  
-• IP Address on server_net: 192.168.12.13  
+•  Address on server_net: 192.168.12.13  
+
 Kali was used for running scans, exploits, and connecting to the target. I set it up to have access to both the attacker network and the server network so I could simulate an external attacker trying to reach an internal system.
 
 ```
