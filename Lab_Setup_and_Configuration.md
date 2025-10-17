@@ -79,7 +79,8 @@ Kali was used for running scans, exploits, and connecting to the target. I set i
 ```
 
 ## Metasploitable 2 – Network Adapters
-• Metasploitable 2: o IP: 192.168.12.14  
+• Metasploitable 2: 
+IP: 192.168.12.14  
 • Metasploitable 2 is a purposely vulnerable machine to simulate real-world servers that could be exploited.
 
 ```
