@@ -1,4 +1,4 @@
-# Very Legit, Very Legal: A Beginner’s Cybersecurity Lab
+# Very Legit, Very Legal: A Noob’s First Cybersecurity Lab
 
 This project is a fully virtualized cybersecurity lab that simulates a realistic attacker–victim–defender workflow using VirtualBox. You’ll stage attacks from **Kali Linux** against **Metasploitable 2** and observe detections on **pfSense + Snort**, covering the full lifecycle from reconnaissance and exploitation to detection and analysis.  
    
